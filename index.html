@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
+    <style>
+        /* Custom CSS for the message box */
+        #message-box {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #f0fdf4;
+            color: #15803d;
+            padding: 16px;
+            border-radius: 6px;
+            border: 1px solid #16a34a;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+        #message-box.show {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-inter">
+    <div id="message-box" class="hidden"></div>
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-2xl font-semibold">My Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-blue-200 transition duration-300">Home</a></li>
+                    <li><a href="#about" class="hover:text-blue-200 transition duration-300">About</a></li>
+                    <li><a href="#projects" class="hover:text-blue-200 transition duration-300">Projects</a></li>
+                     <li><a href="#skills" class="hover:text-blue-200 transition duration-300">Skills</a></li>
+                    <li><a href="#contact" class="hover:text-blue-200 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="bg-gradient-to-br from-blue-100 to-purple-100 text-gray-800 py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-4">Hello, I'm Ashmit Kushwaha</h2>
+                <p class="text-xl mb-8">I'm a Full Stack Developer.</p>
+                <a href="#projects" class="bg-indigo-500 text-white py-3 px-6 rounded-full hover:bg-indigo-700 transition duration-300 font-semibold">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="bg-white py-20">
+            <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div class="text-gray-700">
+                    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+                    <p class="text-lg mb-6">
+                        I'm a passionate Full Stack Developer with experience in MERN stack technologies.  I have a strong foundation in developing and integrating APIs, improving application performance, and implementing authentication and state management.
+                    </p>
+                    <p class="text-lg">
+                        My goal is to use my skills to build innovative and impactful solutions. I'm always eager to learn new technologies and take on challenging projects.
+                    </p>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="placeholder-image.jpg" alt="Your Photo" class="w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="bg-gray-100 py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-semibold mb-8 text-center text-gray-800">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-gray-800">Social Media Web Application (UI Design)</h3>
+                            <p class="text-gray-700 mb-4">Designed a modern UI for a social media platform using React.js, HTML, and CSS. Created responsive layouts for login, profile, and feed pages. Implemented like, comment, and share buttons. Focused on UX design and state management.
+                            </p>
+                            <p class="text-gray-700 font-semibold">Technologies Used: React.js, Bootstrap, JavaScript, CSS.</p>
+                            <a href="#" class="text-blue-500 hover:text-blue-700 transition duration-300 font-semibold">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-gray-800">Digital Calendar</h3>
+                            <p class="text-gray-700 mb-4">Built a functional digital calendar allowing users to set reminders. Implemented date selection, event management, and navigation controls.  Ensured responsive design for both desktop and mobile users.
+                            </p>
+                            <p class="text-gray-700 font-semibold">Technologies Used: HTML, CSS, JavaScript.</p>
+                            <a href="#" class="text-blue-500 hover:text-blue-700 transition duration-300 font-semibold">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105">
+                       <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-gray-800">News Application</h3>
+                            <p class="text-gray-700 mb-4">Developed a responsive and dynamic news application that fetches and displays real-time news from various sources. Integrated third-party news APIs. Implemented user authentication and preferences storage. Optimized performance and designed an intuitive UI.
+                            </p>
+                            <p class="text-gray-700 font-semibold">Technologies Used: React.js, Node.js, Express.js, MongoDB, REST API.</p>
+                            <a href="#" class="text-blue-500 hover:text-blue-700 transition duration-300 font-semibold">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="bg-white py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-semibold mb-8 text-center text-gray-800">My Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-100 rounded-lg shadow-md p-6 flex items-center justify-center">
+                        <h4 class="text-xl font-semibold text-gray-700">MongoDB</h4>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg shadow-md p-6 flex items-center justify-center">
+                        <h4 class="text-xl font-semibold text-gray-700">Express.js</h4>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg shadow-md p-6 flex items-center justify-center">
+                        <h4 class="text-xl font-semibold text-gray-700">React</h4>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg shadow-md p-6 flex items-center justify-center">
+                        <h4 class="text-xl font-semibold text-gray-700">Node.js</h4>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg shadow-md p-6 flex items-center justify-center">
+                         <h4 class="text-xl font-semibold text-gray-700">JavaScript</h4>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg shadow-md p-6 flex items-center justify-center">
+                         <h4 class="text-xl font-semibold text-gray-700">HTML</h4>
+                    </div>
+                     <div class="bg-gray-100 rounded-lg shadow-md p-6 flex items-center justify-center">
+                        <h4 class="text-xl font-semibold text-gray-700">CSS</h4>
+                    </div>
+                     <div class="bg-gray-100 rounded-lg shadow-md p-6 flex items-center justify-center">
+                        <h4 class="text-xl font-semibold text-gray-700">Bootstrap</h4>
+                    </div>
+                    
+                     <div class="bg-gray-100 rounded-lg shadow-md p-6 flex items-center justify-center">
+                        <h4 class="text-xl font-semibold text-gray-700">GitHub</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-gradient-to-br from-purple-100 to-pink-100 py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-semibold mb-8 text-gray-800">Contact Me</h2>
+                <p class="text-lg text-gray-700 mb-6">Feel free to reach out to me for any questions or collaboration opportunities.</p>
+                <form id="contact-form" class="max-w-md mx-auto">
+                    <div class="mb-4">
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-gray-700" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-gray-700" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-4">
+                        <textarea id="message" name="message" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-gray-700" placeholder="Your Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-pink-500 text-white py-3 px-6 rounded-full hover:bg-pink-700 transition duration-300 font-semibold">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const contactForm = document.getElementById('contact-form');
+        const messageBox = document.getElementById('message-box');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Basic validation
+            if (!name || !email || !message) {
+                showMessage('Please fill in all fields.');
+                return;
+            }
+
+            // Simulate sending data (replace with actual backend logic)
+            console.log('Name:', name);
+            console.log('Email:', email);
+            console.log('Message:', message);
+
+            // Simulate success message
+            showMessage('Message sent successfully!');
+            contactForm.reset(); // Clear the form
+        });
+
+        function showMessage(message) {
+            messageBox.textContent = message;
+            messageBox.classList.add('show');
+            setTimeout(() => {
+                messageBox.classList.remove('show');
+            }, 3000); // Hide after 3 seconds
+        }
+    </script>
+</body>
+</html>
